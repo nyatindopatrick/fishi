@@ -2,6 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #E9F1F9;
+  height: 100vh;
 }
 
 .login-container {
@@ -21,6 +23,8 @@
   width: 100%;
   padding: 0px;
   margin-top: 5%;
+  border-radius: 15px !important;
+  z-index: 10000;
 }
 
 .left {
@@ -49,7 +53,7 @@
   width: 80px;
   height: 80px;
   border: 6px solid white;
-  margin-left: 12rem;
+  right: -2.5rem;
   border-radius: 100%;
   background: #1565c0;
 }
@@ -72,5 +76,11 @@
 
 .btn-fishi {
   background: #1565c0;
+}
+
+.login-main {
+  background: white;
+  padding-top: 30%;
+  background-position: center bottom;
 }
 /*# sourceMappingURL=login.css.map */

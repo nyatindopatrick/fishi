@@ -2,6 +2,8 @@ $blue-main: #1565c0
 
 .login
     display: flex
+    background: #E9F1F9
+    height: 100vh
 .login-container
     display: grid
     grid-template-columns: 1fr 2fr
@@ -12,6 +14,8 @@ $blue-main: #1565c0
     width: 100%
     padding: 0px
     margin-top: 5%
+    border-radius: 15px !important
+    z-index: 10000
 
 .left
     background: $blue-main
@@ -28,7 +32,7 @@ $blue-main: #1565c0
     width: 80px
     height: 80px
     border: 6px solid white
-    margin-left: 12rem
+    right: -2.5rem
     border-radius: 100%
     background: $blue-main
 .login-details
@@ -38,3 +42,7 @@ $blue-main: #1565c0
     align-items: center
 .btn-fishi
     background: $blue-main
+.login-main
+    background: white
+    padding-top: 30%
+    background-position: center bottom

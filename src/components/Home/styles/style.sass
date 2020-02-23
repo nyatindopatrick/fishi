@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap')
+
+$blue-main: #1565c0
+$bright-blue: #77ece6
+
+.hero
+    background: linear-gradient(rgba(0,0 , 0,0.4 ),rgba(0,0 , 0,0.4 )), url('https://www.nation.co.ke/image/view/-/2450898/highRes/828920/-/22fn9w/-/Gold+Aqua+Ay.JPG.jpg') no-repeat
+    height: 70vh
+    display: flex
+    align-items: center
+    color: white
+    font-family: 'Montserrat'
+    background-size: cover
+
+.quality
+    margin-left: 5%
+    h2
+        font-weight: 600
+    h5
+        color: $bright-blue
+        font-family: 'Lora'
+        font-style: 'italic'
+    button
+        color: white
+        background: $blue-main
+.steps
+    h3 
+        font-weight: 600
+.step-details
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    div
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            width: 7rem
+        h5 
+            font-weight: 600

@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <div className="d-flex login justify-content-center p-0 m-0">
       <div className="container login-container">
-        <div className="left">
+        <div className="left position-relative">
           <h2>FISHI</h2>
           <p>Get quality fingerlings verified by the experts.</p>
           <div className="center-circle position-absolute">
@@ -16,12 +16,24 @@ export default function Login() {
             />
           </div>
         </div>
-        <div className="">
+        <div className="login-main w-100 h-100">
           <h2 className="text-center">Login</h2>
           <div className="login-details">
-              <input className="form-control w-50 my-3" type="email" name="email" placeholder="Email"/>
-              <input className="form-control w-50 my-2" type="password" name="password" placeholder="Password"/>
-              <button type="submit" className="btn btn-primary btn-fishi">SIGN IN</button>
+            <input
+              className="form-control w-50 my-3"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              className="form-control w-50 my-2"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <button type="submit" className="btn btn-primary btn-fishi">
+              SIGN IN
+            </button>
           </div>
         </div>
       </div>

@@ -1,0 +1,40 @@
+nav {
+  background: rgba(21, 101, 192, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  border-bottom: 4px solid #77ece6;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #c3d4e9;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

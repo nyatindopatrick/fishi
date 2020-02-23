@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap");
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("https://www.nation.co.ke/image/view/-/2450898/highRes/828920/-/22fn9w/-/Gold+Aqua+Ay.JPG.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.nation.co.ke/image/view/-/2450898/highRes/828920/-/22fn9w/-/Gold+Aqua+Ay.JPG.jpg") no-repeat;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: 'Montserrat';
+  background-size: cover;
+}
+
+.quality {
+  margin-left: 5%;
+}
+
+.quality h2 {
+  font-weight: 600;
+}
+
+.quality h5 {
+  color: #77ece6;
+  font-family: 'Lora';
+  font-style: 'italic';
+}
+
+.quality button {
+  color: white;
+  background: #1565c0;
+}
+
+.steps h3 {
+  font-weight: 600;
+}
+
+.step-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.step-details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-details div img {
+  width: 7rem;
+}
+
+.step-details div h5 {
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
