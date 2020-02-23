@@ -1,0 +1,76 @@
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  -webkit-box-shadow: 4px 6px 6px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 6px 6px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0px;
+  margin-top: 5%;
+}
+
+.left {
+  background: #1565c0;
+  height: 100%;
+  width: 100%;
+  max-resolution: 0px;
+  padding: 2.4rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center-circle {
+  width: 80px;
+  height: 80px;
+  border: 6px solid white;
+  margin-left: 12rem;
+  border-radius: 100%;
+  background: #1565c0;
+}
+
+.login-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-fishi {
+  background: #1565c0;
+}
+/*# sourceMappingURL=login.css.map */
