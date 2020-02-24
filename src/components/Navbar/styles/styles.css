@@ -1,40 +1,95 @@
 nav {
-  background: rgba(21, 101, 192, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  border-bottom: 4px solid #77ece6;
-  position: fixed;
-  width: 100%;
-}
-
-nav a {
-  color: white;
-}
-
-nav a:hover {
-  text-decoration: none;
-  color: #c3d4e9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  height: 13vh;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-nav ul li {
+  padding: 1rem;
+}
+
+.top-nav ul img {
+  width: 4rem;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.bottom-nav {
+  background: black;
+  color: white;
+  font-size: 1.2rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  width: 50%;
+  margin: 3rem 0px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.bottom-nav ul a {
+  padding: 0.7rem 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-nav ul a:hover {
+  background: #1d1d1d;
+}
+
+.accounts {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-nav ul li {
-  padding: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

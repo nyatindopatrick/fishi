@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap");
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("https://www.nation.co.ke/image/view/-/2450898/highRes/828920/-/22fn9w/-/Gold+Aqua+Ay.JPG.jpg") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.nation.co.ke/image/view/-/2450898/highRes/828920/-/22fn9w/-/Gold+Aqua+Ay.JPG.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("https://images.pexels.com/photos/1103812/pexels-photo-1103812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/1103812/pexels-photo-1103812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@
 }
 
 .quality h5 {
-  color: #77ece6;
+  color: #ADF5FF;
   font-family: 'Lora';
   font-style: 'italic';
 }
@@ -33,35 +33,61 @@
   background: #1565c0;
 }
 
-.steps h3 {
+.steps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  background: radial-gradient(black 7%, transparent 5%) 0 0, radial-gradient(black 5%, transparent 5%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 10%, transparent 10%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 5%) 8px 9px;
+  background-color: #1565c0;
+  background-size: 16px 16px;
+  grid-gap: 2rem;
+  color: white;
+}
+
+.steps h5 {
+  text-align: center;
   font-weight: 600;
 }
 
-.step-details {
+.description {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  height: 40vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(https://pngriver.com/wp-content/uploads/2017/11/Dottod-World-Map_Transparent_Images-backgrounds.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(https://pngriver.com/wp-content/uploads/2017/11/Dottod-World-Map_Transparent_Images-backgrounds.png);
+  background-size: contain;
 }
 
-.step-details div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.fish_pic {
+  bottom: -2rem;
+  right: 2rem;
 }
 
-.step-details div img {
-  width: 7rem;
+.description-boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
-.step-details div h5 {
+.description-boxes div {
+  -webkit-box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.4);
+  background: white;
+  height: auto;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.description-boxes div h5 {
   font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

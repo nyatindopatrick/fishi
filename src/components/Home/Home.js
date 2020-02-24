@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/style.css";
+import fish from "../../assets/images/fish.png";
+import { services, steps } from "./data";
 
 export default function Home() {
   return (
@@ -12,23 +14,37 @@ export default function Home() {
           <button className="btn">Order now</button>
         </div>
       </div>
-      <div className="steps">
-        <h3 className="text-center py-3">
-          MAKE YOUR ORDER IN THESE EASY STEPS
-        </h3>
-        <div className="step-details container">
-          <div>
-            <h5>Explore</h5>
-            <img
-              className="p-2"
-              src="https://image.flaticon.com/icons/svg/889/889844.svg"
-              alt=""
-            />
-            <p>Explore the fantastic products and services we provide.</p>
-            <Link to="/app/products">
-              <button className="btn btn-primary">View Products</button>
-            </Link>
-          </div>
+      <div className="steps p-5">
+        {steps.map(({ title, body, icon }, i) => {
+          return (
+            <div key={i}>
+              <h5>
+                <span>
+                  <i className={`fas ${icon}`}></i>&nbsp;
+                </span>
+                {title}
+              </h5>
+              <p>{body}</p>
+              <p></p>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="description ">
+        <div className="position-relative py-5">
+          <h4 className="text-right">WHAT WE CAN DO FOR YOU</h4>
+          <img className="position-absolute fish_pic w-75" src={fish} alt="" />
+        </div>
+        <div className="description-boxes py-5 mx-5 ml-5">
+          {services.map(({ title, description }, i) => {
+            return (
+              <div key={i}>
+                <h5>{title}</h5>
+                <p>{description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

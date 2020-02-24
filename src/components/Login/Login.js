@@ -6,7 +6,7 @@ export default function Login() {
     <div className="d-flex login justify-content-center p-0 m-0">
       <div className="container login-container">
         <div className="left position-relative">
-          <h2>FISHI</h2>
+          <h2>VICTORIA AQUACULTURE</h2>
           <p>Get quality fingerlings verified by the experts.</p>
           <div className="center-circle position-absolute">
             <img

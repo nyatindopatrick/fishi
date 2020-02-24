@@ -49,6 +49,11 @@
           justify-content: center;
 }
 
+.left p {
+  font-family: 'Lora';
+  font-style: italic;
+}
+
 .center-circle {
   width: 80px;
   height: 80px;
