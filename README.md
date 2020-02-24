@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## VICTORIA AQUACULTURE
+
+This project is aimed at providing fish farmers with an easier way of getting access to fingerlings, quality feeds and experts to guide in fish farming best practices.
+
+![screenshot](./public/screen_shot.png)
+
+Additional description about the project and its features.
+
+## Built With
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+- CSS
+- Bootstrap
+- sass
+- Node.js
+
+## Live Demo
+
+[Live Demo Link]()
 
 ## Available Scripts
 
@@ -37,32 +55,22 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Patrick Nyatindo**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Github: [@githubhandle](https://github.com/nyatindopatrick)
+- Twitter: [@twitterhandle](https://twitter.com/nyatindopatrick)
+- Linkedin: [linkedin](https://linkedin.com/in/nyatindopatrick)
 
-### Code Splitting
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Victoria Aquaculture
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT](lic.url) licensed.
