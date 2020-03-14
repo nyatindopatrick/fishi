@@ -1,51 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles/style.css";
-import fish from "../../assets/images/fish.png";
-import { services, steps } from "./data";
-
+import { services, products } from "./data";
+import { Link } from "react-router-dom";
+import Carousel from "./Carousel";
 export default function Home() {
+  
   return (
     <div className="homepage">
-      <div className="hero">
-        <div className="quality">
-          <h5>WE PROVIDE</h5>
-          <h2>BEST QUALITY FINGERLINGS</h2>
-          <button className="btn">Order now</button>
-        </div>
-      </div>
-      <div className="steps p-5">
-        {steps.map(({ title, body, icon }, i) => {
+      <Carousel services={services} />
+      <div className="services">
+        {products.map(({ title, image, link }, i) => {
           return (
-            <div key={i}>
-              <h5>
+            <Link to={link} className="product-listing" key={i}>
+              <img
+                src={
+                  image.slice(0, 4) === "http"
+                    ? image
+                    : require(`../../static/images/${image}`)
+                }
+                alt=""
+              />
+              <div className="label d-flex">
+                <h3>{title}</h3>
                 <span>
-                  <i className={`fas ${icon}`}></i>&nbsp;
+                  <i className="fas fa-caret-right"></i>
                 </span>
-                {title}
-              </h5>
-              <p>{body}</p>
-              <p></p>
-            </div>
+              </div>
+            </Link>
           );
         })}
-      </div>
-
-      <div className="description ">
-        <div className="position-relative py-5">
-          <h4 className="text-right">WHAT WE CAN DO FOR YOU</h4>
-          <img className="position-absolute fish_pic w-75" src={fish} alt="" />
-        </div>
-        <div className="description-boxes py-5 mx-5 ml-5">
-          {services.map(({ title, description }, i) => {
-            return (
-              <div key={i}>
-                <h5>{title}</h5>
-                <p>{description}</p>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </div>
   );

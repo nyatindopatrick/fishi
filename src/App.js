@@ -1,24 +1,32 @@
 import React from "react";
-import "./assets/styles/index.css";
-import "./assets/styles/styles.css";
+import "./static/styles/index.css";
+import "./static/styles/styles.css";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
-import Login from "./components/Login/Login";
-import publicRoutes from "./routes/publicRoutes";
+import PrivateRoutes from "./routes/authRoutes";
+import PublicRoutes from "./routes/publicRoutes";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/app" exact component={publicRoutes} />
-        <Route path="/Login" exact component={Login} />
-        <Redirect from="/" exact to="/app" />
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/login" exact>
+            <PrivateRoutes />
+          </Route>
+          <Route path="/app">
+            <PublicRoutes />
+          </Route>
+          <Route component={NotFound} />
+          <Redirect from="/" exact to="/app" />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

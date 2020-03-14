@@ -1,0 +1,41 @@
+.main {
+  background: #1565c0;
+  height: 100vh;
+}
+
+.error-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 101, 192, 0.9)), to(rgba(21, 101, 192, 0.9))), url("../../../static/404.png") no-repeat center;
+  background: linear-gradient(rgba(21, 101, 192, 0.9), rgba(21, 101, 192, 0.9)), url("../../../static/404.png") no-repeat center;
+  height: 100%;
+  background-size: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+}
+
+.error-content h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+}
+
+.error-content a {
+  background: #2cc0e6;
+  width: 12rem;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -15,33 +15,31 @@ export const services = [
   },
   {
     title: "CONSULTATION",
-    description: "We advise farmers on best practices to get the most out of their fish farms."
+    description:
+      "We advise farmers on best practices to get the most out of their fish farms."
   }
 ];
 
-export const steps = [
+
+
+export const products = [
   {
-    title: "Quality",
-    body:
-      "We provide quality fingerlings and feeds recommended by our team of experts.",
-    icon: "fa-gem"
+    title: "FINGERLINGS",
+    image:
+      "fingerlings/fingerling-hero.JPG",
+    link: "/app/products/fingerlings"
   },
   {
-    title: "Consultancy",
-    body:
-      "We have the experts ready to assist and advise on the best practices for quality produce.",
-    icon: "fa-hands-helping"
+    title: "FISH FEEDS",
+    image:
+      "https://www.theaquaponicsource.com/wp-content/uploads/2014/07/p-2047-AFFAB004-2.jpg",
+    link: "/app/products/feeds"
   },
   {
-    title: "Delivery",
-    body:
-      "We give you the flexibility of choosing the delivery methos (pickup or on-site delivery) of your choice.",
-    icon: "fa-truck"
-  },
-  {
-    title: "Connection",
-    body:
-      "We keep intouch with our clients to ensure they get the latest products available.",
-    icon: "fa-share-alt"
+    title: "CONSULTATION",
+    image:
+      "https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
+    link: "/app/products/consult"
   }
 ];
+
