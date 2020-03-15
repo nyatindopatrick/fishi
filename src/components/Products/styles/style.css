@@ -18,25 +18,29 @@
   font-size: 16px;
   line-height: 35px;
   text-align: center;
-  border: 3px solid #e6de08;
+  border: 3px solid #89CFF0;
   display: block;
   text-decoration: none;
   margin: 20px auto 1px auto;
   color: #000;
   overflow: hidden;
   position: relative;
-  background-color: #e6de08;
+  background-color: #89CFF0;
 }
 
 #ads .ad-btn:hover {
-  background-color: #e6de08;
+  background-color: #89CFF0;
   color: #1e1717;
-  border: 2px solid #e6de08;
+  border: 2px solid #89CFF0;
   background: transparent;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
           box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+#ads .ad-btn:focus {
+  outline: none;
 }
 
 #ads .ad-title h5 {

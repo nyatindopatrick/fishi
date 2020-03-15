@@ -6,6 +6,7 @@ import {
   MDBView
 } from "mdbreact";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 import feeds from "../../static/images/feeds.jpg";
 import consult from "../../static/images/consult.JPG";
 
@@ -31,7 +32,9 @@ export default function Carousels({ services }) {
                 <div className="carousel_text">
                   <h4>WE PROVIDE QUALITY FISH FINGERLINGS</h4>
                   <p>Site delivery also available</p>
-                  <Button type="primary">Order Now</Button>
+                  <Link to="/app/products/fingerlings">
+                    <Button type="primary">Order Now</Button>
+                  </Link>
                 </div>
               </div>
             </MDBView>

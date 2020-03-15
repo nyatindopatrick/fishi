@@ -39,7 +39,7 @@ export const products = [
     title: "CONSULTATION",
     image:
       "https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
-    link: "/app/products/consult"
+    link: "/app/consult"
   }
 ];
 

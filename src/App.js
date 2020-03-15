@@ -23,7 +23,7 @@ function App() {
             <PublicRoutes />
           </Route>
           <Route component={NotFound} />
-          <Redirect from="/" exact to="/app" />
+          <Redirect from="/" to="/app" />
         </Switch>
       </Router>
     </>

@@ -6,10 +6,11 @@ import Navbar from "../components/Navbar/Navbar";
 import Products from "../components/Products/Products";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from "../components/Footer/Footer";
+import Cart from "../components/Cart/Cart";
 
 export default props => {
   const { path } = useRouteMatch();
-  console.log(path);
+
   return (
     <>
       <Navbar />
@@ -22,6 +23,9 @@ export default props => {
         </Route>
         <Route path={`${path}/products/:id`}>
           <Products />
+        </Route>
+        <Route path={`${path}/cart`} exact>
+          <Cart />
         </Route>
         <Route component={NotFound} />
       </Switch>

@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import logo from "../../static/images/logo.png";
 import "./styles/styles.css";
 
 export default function Navbar() {
+  const [cart, setCart] = useState(0);
+  useEffect(() => {
+    loadCart();
+  }, []);
+  const loadCart = () => {
+    const myCart = JSON.parse(localStorage.getItem("items"));
+    return setCart(myCart?myCart.length:0);
+  };
   return (
     <nav className="navigation">
       <div className="bottom-nav">
@@ -30,7 +38,7 @@ export default function Navbar() {
             <Link to="/app/contact">Contact</Link>
           </li>
           <Link to="/app/cart" className="position-relative">
-            <i className="fas fa-shopping-cart"></i><p className="cart_items position-absolute">1</p>
+            <i className="fas fa-shopping-cart"></i><p className="cart_items position-absolute">{cart}</p>
           </Link>
         </ul>
       </div>
