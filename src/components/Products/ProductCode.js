@@ -31,7 +31,7 @@ export default function Procucts({ data }) {
                         ? image
                         : require(`../../static/images/${image}`)
                     }
-                    alt="Alternate Text"
+                    alt="Alternate Text "
                   />
                 </div>
                 <div className="card-image-overlay m-auto">
