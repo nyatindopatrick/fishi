@@ -11,11 +11,16 @@ import PrivateRoutes from "./routes/authRoutes";
 import PublicRoutes from "./routes/publicRoutes";
 import NotFound from "./components/NotFound/NotFound";
 
+const Home = () => <Redirect from="/" to="/app" />;
+
 function App() {
   return (
     <>
       <Router>
         <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
           <Route path="/login" exact>
             <PrivateRoutes />
           </Route>
@@ -23,7 +28,6 @@ function App() {
             <PublicRoutes />
           </Route>
           <Route component={NotFound} />
-          <Redirect from="/" to="/app" />
         </Switch>
       </Router>
     </>
