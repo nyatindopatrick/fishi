@@ -2,7 +2,7 @@ export const products = [
   {
     title: "Tilapia Fingerlings",
     body: "To see the veriety of fingerling available",
-    image: "fingerlings/tilapia_kid.JPG",
+    image: "fingerlings/tilapia_kid.jpeg",
     link: "/app/productlist",
     price: 10,
     quantity:1
